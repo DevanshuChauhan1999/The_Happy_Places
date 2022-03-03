@@ -118,7 +118,7 @@ class AddHappyPlacesActivity : AppCompatActivity(), View.OnClickListener {
                     }
                     else ->{
                         val happyPlaceModel = HapplyPlaceModel(
-                            0, 
+                            0,
                             binding?.etTitle?.text.toString(),
                             saveImageToInternalStorage.toString(),
                             binding?.etDescription?.text.toString(),
@@ -133,6 +133,7 @@ class AddHappyPlacesActivity : AppCompatActivity(), View.OnClickListener {
                         if (addHappyPlace > 0){
                             Toast.makeText(this, "The Happy Place details are inserted successfully", Toast.LENGTH_SHORT).show()
                         }
+                        finish()
                     }
                 }
                 

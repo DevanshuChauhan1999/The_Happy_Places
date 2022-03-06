@@ -78,6 +78,7 @@ class DatabaseHandler(context: Context) :
     /**
      * Function to read all the list of Happy Places data which are inserted.
      */
+    @SuppressLint("Range")
     fun getHappyPlacesList(): ArrayList<HapplyPlaceModel> {
 
         // A list is initialize using the data model class in which we will add the values from cursor.
